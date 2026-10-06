@@ -1,3 +1,5 @@
+import Link from 'next/link'
+
 export default function DashLayout({
     children
 }:{
@@ -6,9 +8,10 @@ export default function DashLayout({
     return (
         <div className="flex">
             <nav>
-                <a href="#dash">Dashboard</a>
-                <a href="#cmd">Commandes</a>
-                <a href="#clt">Client</a>
+               <Link href="/dashboard">Dash</Link>
+               <Link href="/dashboard/clients">Clients</Link>
+               <Link href="/dashboard/commandes">Commandes</Link>
+
             </nav>
             <main>
                 {children}
