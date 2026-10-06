@@ -4,9 +4,7 @@ export default function Home(){
       <h1 className="text-center">BizFlow</h1>
      <div className="flex gap-x-1">
         <nav>
-          <a href="#dash">Dashboard</a>
-          <a href="#cmd">Commandes</a>
-          <a href="#clt">Client</a>
+          
         </nav>
         
         <section>
