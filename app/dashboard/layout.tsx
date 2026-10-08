@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import { Navsidebar } from '@/src/lib/navigation'
+import Sidebar from '@/src/components/sidebar'
 
 
 export default function DashLayout({
@@ -9,13 +10,7 @@ export default function DashLayout({
 }){
     return (
         <div className="flex">
-            <nav>
-               <ul>
-                {Navsidebar.map((nav)=>(
-                    <Link key={nav.id} href={nav.chemin}> <li >{nav.nom}</li></Link>
-                ))}
-               </ul>
-            </nav>
+            <Sidebar/>
             <main>
                 {children}
             </main>
