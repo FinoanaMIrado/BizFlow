@@ -1,0 +1,8 @@
+{
+  "env": {
+    "ANTHROPIC_AUTH_TOKEN": "sk-gO3ohBejjp4EzVQiRWLXh37tnyGC2Tqf9mYvMDociJyeTnEU",
+    "ANTHROPIC_BASE_URL": "https://agentrouter.org/",
+    "ANTHROPIC_MODEL": "claude-opus-4-8",
+    "CLAUDE_CODE_DISABLE_NONSTREAMING_FALLBACK": "1"
+  }
+}
