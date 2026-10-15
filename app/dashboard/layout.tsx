@@ -9,9 +9,11 @@ export default function DashLayout({
     children:React.ReactNode
 }){
     return (
-        <div className="flex min-h-screen bg-[#f6f8fc]">
+        <div className="flex">
             <Sidebar/>
-            {children}
+            <main>
+                {children}
+            </main>
         </div>
     )
 
