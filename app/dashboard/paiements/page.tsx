@@ -1,3 +1,7 @@
-import { ModulePage } from "@/src/components/module-page"
-const rows = [{Paiement:"#PAY-8832",Commande:"#CMD-1048",Client:"Atelier Nova",Mode:"Mobile Money",Montant:"850 000 Ar",Statut:"Payé"},{Paiement:"#PAY-8831",Commande:"#CMD-1047",Client:"Green Market",Mode:"Virement",Montant:"200 000 Ar",Statut:"Partiel"},{Paiement:"#PAY-8830",Commande:"#CMD-1046",Client:"Studio Aina",Mode:"Carte bancaire",Montant:"1 250 000 Ar",Statut:"Payé"},{Paiement:"#PAY-8829",Commande:"#CMD-1045",Client:"Bâtir Plus",Mode:"Espèces",Montant:"—",Statut:"En attente"}]
-export default function Paiements(){return <ModulePage title="Paiements" description="Enregistrez et suivez les règlements liés à vos commandes." action="Enregistrer un paiement" stats={[{label:"Paiements reçus",value:"18,6M Ar",tone:"text-emerald-500"},{label:"En attente",value:"2,4M Ar",tone:"text-amber-500"},{label:"Partiels",value:"18",tone:"text-[#3034df]"},{label:"Taux de recouvrement",value:"86%"}]} columns={["Paiement","Commande","Client","Mode","Montant","Statut"]} rows={rows}/>} 
+export default function Commandes(){
+    return(
+        <main>
+            <h1>paiaka</h1>
+        </main>
+    )
+}
