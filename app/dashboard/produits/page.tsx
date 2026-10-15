@@ -1,7 +1,3 @@
-export default function Commandes(){
-    return(
-        <main>
-            <h1>proaka</h1>
-        </main>
-    )
-}
+import { ModulePage } from "@/src/components/module-page"
+const rows = [{Produit:"Pack Identité visuelle",Categorie:"Service",Prix:"450 000 Ar",Stock:"—",Statut:"Disponible"},{Produit:"Carte de visite premium",Categorie:"Produit",Prix:"35 000 Ar",Stock:"128",Statut:"Disponible"},{Produit:"Site vitrine",Categorie:"Service",Prix:"1 200 000 Ar",Stock:"—",Statut:"Disponible"},{Produit:"Flyers A5",Categorie:"Produit",Prix:"85 000 Ar",Stock:"12",Statut:"Stock faible"}]
+export default function Produits(){return <ModulePage title="Produits & services" description="Gérez votre catalogue, vos prix et vos niveaux de stock." action="Ajouter un produit" stats={[{label:"Articles au catalogue",value:"86"},{label:"Produits actifs",value:"78",tone:"text-emerald-500"},{label:"Stock faible",value:"6",tone:"text-amber-500"},{label:"Valeur du stock",value:"12,4M Ar"}]} columns={["Produit","Categorie","Prix","Stock","Statut"]} rows={rows} tabs={["Tous","Produits","Services","Stock faible"]}/>} 

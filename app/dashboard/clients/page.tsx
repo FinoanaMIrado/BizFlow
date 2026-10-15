@@ -1,7 +1,3 @@
-export default function Clients(){
-    return(
-        <main>
-            <h1>Clients</h1>
-        </main>
-    )
-}
+import { ModulePage } from "@/src/components/module-page"
+const rows = [{Client:"Atelier Nova",Contact:"Miora Rakoto",Email:"miora@nova.mg",Commandes:"24",Statut:"Actif"},{Client:"Studio Aina",Contact:"Aina R.",Email:"contact@aina.mg",Commandes:"18",Statut:"Actif"},{Client:"Bâtir Plus",Contact:"Hery Andri",Email:"hery@batirplus.mg",Commandes:"9",Statut:"En attente"},{Client:"Green Market",Contact:"Tiana R.",Email:"hello@green.mg",Commandes:"31",Statut:"Actif"}]
+export default function Clients(){return <ModulePage title="Clients" description="Gérez votre portefeuille client et suivez chaque relation." action="Nouveau client" stats={[{label:"Total clients",value:"248"},{label:"Clients actifs",value:"214",tone:"text-emerald-500"},{label:"Nouveaux ce mois",value:"32",tone:"text-[#3034df]"},{label:"À relancer",value:"18",tone:"text-amber-500"}]} columns={["Client","Contact","Email","Commandes","Statut"]} rows={rows} tabs={["Tous les clients","Actifs","Inactifs"]}/>} 
