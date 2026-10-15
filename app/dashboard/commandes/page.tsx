@@ -1,7 +1,3 @@
-export default function Commandes(){
-    return(
-        <main>
-            <h1>Commandes</h1>
-        </main>
-    )
-}
+import { ModulePage } from "@/src/components/module-page"
+const rows = [{Commande:"#CMD-1048",Client:"Atelier Nova",Date:"28 jan. 2025",Total:"850 000 Ar",Statut:"Terminée"},{Commande:"#CMD-1047",Client:"Green Market",Date:"27 jan. 2025",Total:"420 000 Ar",Statut:"En préparation"},{Commande:"#CMD-1046",Client:"Studio Aina",Date:"26 jan. 2025",Total:"1 250 000 Ar",Statut:"Confirmée"},{Commande:"#CMD-1045",Client:"Bâtir Plus",Date:"25 jan. 2025",Total:"185 000 Ar",Statut:"Brouillon"}]
+export default function Commandes(){return <ModulePage title="Commandes" description="Suivez le cycle de vie de vos commandes de bout en bout." action="Nouvelle commande" stats={[{label:"Commandes totales",value:"1 284"},{label:"En cours",value:"42",tone:"text-[#3034df]"},{label:"Terminées ce mois",value:"186",tone:"text-emerald-500"},{label:"Chiffre d'affaires",value:"24,8M Ar"}]} columns={["Commande","Client","Date","Total","Statut"]} rows={rows} tabs={["Toutes","Brouillons","Confirmées","Terminées"]}/>} 

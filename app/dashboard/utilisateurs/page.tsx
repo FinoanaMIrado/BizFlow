@@ -1,7 +1,3 @@
-export default function Commandes(){
-    return(
-        <main>
-            <h1>users</h1>
-        </main>
-    )
-}
+import { ModulePage } from "@/src/components/module-page"
+const rows = [{Utilisateur:"Finoana Mirado",Email:"finoana@bizflow.app",Role:"Administrateur",Derniere:"Aujourd'hui",Statut:"Actif"},{Utilisateur:"Miora Rakoto",Email:"miora@bizflow.app",Role:"Gestionnaire",Derniere:"Il y a 2 h",Statut:"Actif"},{Utilisateur:"Hery Andri",Email:"hery@bizflow.app",Role:"Employé",Derniere:"Hier",Statut:"Actif"},{Utilisateur:"Aina R.",Email:"aina@bizflow.app",Role:"Employé",Derniere:"12 jan. 2025",Statut:"Désactivé"}]
+export default function Utilisateurs(){return <ModulePage title="Utilisateurs" description="Administrez les accès, rôles et permissions de votre équipe." action="Inviter un utilisateur" stats={[{label:"Utilisateurs",value:"24"},{label:"Administrateurs",value:"2"},{label:"Gestionnaires",value:"8",tone:"text-[#3034df]"},{label:"Employés",value:"14",tone:"text-emerald-500"}]} columns={["Utilisateur","Email","Role","Derniere","Statut"]} rows={rows} tabs={["Tous","Actifs","Désactivés"]}/>} 
